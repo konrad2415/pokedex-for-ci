@@ -3,7 +3,7 @@ name: Say hello
 on:
   push:
     branches:
-      - main
+      - test
 
 jobs:
   hello_world:
@@ -12,3 +12,5 @@ jobs:
       - name: Echo the message
         run: |
           echo "Hola midu!"
+      - name: Show date
+        run: date
